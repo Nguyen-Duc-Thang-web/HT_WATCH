@@ -56,6 +56,7 @@ class clientController extends Controller
     public function chitiet($id)
     {
         $data = Watch::where('id', $id)->first();
+        $data->increment('count');
         return view('client.contents.chitiet', compact('data'));
     }
     // Lấy sản phẩm vào giỏ hàng

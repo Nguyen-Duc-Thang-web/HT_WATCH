@@ -14,6 +14,7 @@ class Watch extends Model
         'image',
         'price',
         'quantity',
+        'count',
         'short_description',
         'description'
     ];
